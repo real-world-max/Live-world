@@ -1,0 +1,64 @@
+body{
+margin:0;
+overflow:hidden;
+background:#06150d;
+}
+
+/* sky */
+.sky{
+position:absolute;
+width:100%;
+height:50%;
+background:linear-gradient(to bottom,#0b3d2e,#102a1c);
+}
+
+/* fog */
+.fog{
+position:absolute;
+width:200%;
+height:100%;
+background:rgba(255,255,255,0.05);
+animation:move 25s linear infinite;
+}
+
+@keyframes move{
+0%{transform:translateX(-30%);}
+100%{transform:translateX(0%);}
+}
+
+/* forest area */
+.forest{
+position:absolute;
+bottom:0;
+width:100%;
+height:60%;
+}
+
+/* trees */
+.tree{
+position:absolute;
+bottom:0;
+width:40px;
+height:180px;
+background:#2d1b10;
+border-radius:10px;
+}
+
+.tree::after{
+content:"";
+position:absolute;
+bottom:100px;
+left:-50px;
+width:140px;
+height:140px;
+background:#1b4d2a;
+border-radius:50%;
+opacity:0.9;
+}
+
+/* positions */
+.t1{left:5%;}
+.t2{left:25%; height:200px;}
+.t3{left:45%; height:170px;}
+.t4{left:65%; height:210px;}
+.t5{left:85%; height:160px;}

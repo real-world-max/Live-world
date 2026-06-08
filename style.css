@@ -62,3 +62,14 @@ opacity:0.9;
 .t3{left:45%; height:170px;}
 .t4{left:65%; height:210px;}
 .t5{left:85%; height:160px;}
+#player{
+position:absolute;
+width:20px;
+height:20px;
+background:red;
+border-radius:50%;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:999;
+}
